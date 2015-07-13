@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D4A78675-4AD7-47AC-A72E-8657C6D30549</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>makecoffee</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>F73FD7DC4FB665E2F53A723430D27F1B70073F55</key>
 		<string>github.com:inaki/makecoffee.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>makecoffee/makecoffee.xcodeproj/project.xcworkspace</string>
+	<string>makecoffee/makecoffee.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>F73FD7DC4FB665E2F53A723430D27F1B70073F55</key>

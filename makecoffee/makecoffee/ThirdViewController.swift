@@ -17,6 +17,17 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var ouncesReqTextField: UITextField!
     
     @IBAction func coffeeReqBtn(sender: AnyObject) {
+        
+        var ouncesDouble : Double = (ouncesReqTextField.text as NSString).doubleValue
+        
+        var beanQty : Double = ouncesDouble * 1.20833333
+        var waterQty : Double = beanQty * 16.4285714
+        var firstPour : Int = Int(beanQty) * 2
+        var secondPour : Int = Int(waterQty) - firstPour
+        
+        
+        ouncesReqLabel.text = ouncesReqTextField.text + " oz"
+        println(secondPour)
     }
     
     override func viewDidLoad() {
