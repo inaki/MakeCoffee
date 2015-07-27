@@ -44,6 +44,7 @@
 		84EF314A1B5306CE001ECFA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EF31491B5306CE001ECFA8 /* Images.xcassets */; };
 		84EF314D1B5306CE001ECFA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EF314B1B5306CE001ECFA8 /* LaunchScreen.xib */; };
 		84EF31591B5306CE001ECFA8 /* makecoffeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF31581B5306CE001ECFA8 /* makecoffeeTests.swift */; };
+		89BB81971B630F86008E08AE /* ChemexResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BB81961B630F86008E08AE /* ChemexResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		84EF31521B5306CE001ECFA8 /* makecoffeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = makecoffeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EF31571B5306CE001ECFA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84EF31581B5306CE001ECFA8 /* makecoffeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makecoffeeTests.swift; sourceTree = "<group>"; };
+		89BB81961B630F86008E08AE /* ChemexResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChemexResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 				84EF314B1B5306CE001ECFA8 /* LaunchScreen.xib */,
 				84EF313E1B5306CE001ECFA8 /* Supporting Files */,
 				8430124E1B530EC800F59849 /* ThirdViewController.swift */,
+				89BB81961B630F86008E08AE /* ChemexResultsViewController.swift */,
 			);
 			path = makecoffee;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				843012881B530FA600F59849 /* SpringView.swift in Sources */,
 				84EF31431B5306CE001ECFA8 /* FirstViewController.swift in Sources */,
 				843012701B530FA600F59849 /* AsyncImageView.swift in Sources */,
+				89BB81971B630F86008E08AE /* ChemexResultsViewController.swift in Sources */,
 				843012731B530FA600F59849 /* DesignableButton.swift in Sources */,
 				8430128A1B530FA600F59849 /* TransitionZoom.swift in Sources */,
 				843012841B530FA600F59849 /* SpringImageView.swift in Sources */,

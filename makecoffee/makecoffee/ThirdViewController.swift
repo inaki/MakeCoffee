@@ -10,11 +10,12 @@ import UIKit
 
 class ThirdViewController: UIViewController {
     
-    @IBOutlet weak var ouncesReqLabel: DesignableLabel!
     
     @IBOutlet weak var coffeeQuestionLabel: DesignableLabel!
     
     @IBOutlet weak var ouncesReqTextField: UITextField!
+    
+    var beans: String?
     
     @IBAction func coffeeReqBtn(sender: AnyObject) {
         
@@ -25,9 +26,20 @@ class ThirdViewController: UIViewController {
         var firstPour : Int = Int(beanQty) * 2
         var secondPour : Int = Int(waterQty) - firstPour
         
+        var cBeans:String = String(format:"%.2f", beanQty)
+        var waterQ:String = String(format: "%.2f", waterQty)
         
-        ouncesReqLabel.text = ouncesReqTextField.text + " oz"
-        println(secondPour)
+        func results(beans: String, water: String, firstP: Int, secondP: Int)
+        {
+            println(" \(beans)g coffee \n \(water)oz water \n (1st pour: \(firstP)oz, 2nd pour: \(secondP)oz)")
+        }
+        
+        
+        println(cBeans + "hey")
+        
+        results(cBeans, waterQ, firstPour, secondPour)
+        
+        beans = " \(cBeans)g coffee \n \(waterQ)oz water \n (1st pour: \(firstPour)oz, 2nd pour: \(secondPour)oz)"
     }
     
     override func viewDidLoad() {
@@ -40,6 +52,15 @@ class ThirdViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "coffeeReqBtnSegue") {
+            var svc = segue.destinationViewController as! ChemexResultsViewController;
+            svc.ouncesPassed = ouncesReqTextField.text + " oz";
+            svc.makeInfoPassed = beans;
+            
+            
+        }
+    }
     
 }
 

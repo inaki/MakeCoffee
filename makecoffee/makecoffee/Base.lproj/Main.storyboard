@@ -196,14 +196,9 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="coffeeReqBtn:" destination="h7M-ef-tX9" eventType="touchUpInside" id="4H2-cg-Mwt"/>
+                                    <segue destination="iN5-wF-Zt9" kind="show" identifier="coffeeReqBtnSegue" id="Ex9-Ys-X57"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8Y-ni-DLN" customClass="DesignableLabel" customModule="makecoffee" customModuleProvider="target">
-                                <rect key="frame" x="140" y="236" width="94" height="31"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -226,13 +221,88 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="coffeeQuestionLabel" destination="rjl-EA-Jqf" id="peE-Tp-CCQ"/>
-                        <outlet property="ouncesReqLabel" destination="O8Y-ni-DLN" id="CFV-S3-DJZ"/>
                         <outlet property="ouncesReqTextField" destination="0TD-oy-AZd" id="LYE-V3-c0E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m6Q-hU-58c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="581.5" y="521.5"/>
+            <point key="canvasLocation" x="581.5" y="809.5"/>
+        </scene>
+        <!--Chemex Results View Controller-->
+        <scene sceneID="q8N-zx-pcS">
+            <objects>
+                <viewController id="iN5-wF-Zt9" customClass="ChemexResultsViewController" customModule="makecoffee" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KF1-BH-OPs"/>
+                        <viewControllerLayoutGuide type="bottom" id="gdn-SN-WAn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bi0-Du-0e7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0kP-ur-MCA" customClass="DesignableView" customModule="makecoffee" customModuleProvider="target">
+                                <rect key="frame" x="80" y="70" width="215" height="215"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLy-02-m7S">
+                                        <rect key="frame" x="55" y="169" width="106" height="31"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.27450980392156865" green="0.8784313725490196" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="iqu-Kz-nU4"/>
+                                    <constraint firstAttribute="height" constant="215" id="xYJ-2K-2c7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="108"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AfP-ZE-UhY">
+                                <rect key="frame" x="0.0" y="290" width="375" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Measurements:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hdx-ca-gSV">
+                                        <rect key="frame" x="71" y="0.0" width="233" height="21"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVc-gx-6tl">
+                                        <rect key="frame" x="63" y="29" width="249" height="80"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="16"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="chemexFull" translatesAutoresizingMaskIntoConstraints="NO" id="UVf-6f-0Le">
+                                <rect key="frame" x="158" y="105" width="58" height="125"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AfP-ZE-UhY" firstAttribute="centerX" secondItem="0kP-ur-MCA" secondAttribute="centerX" id="6He-af-iZt"/>
+                            <constraint firstItem="gdn-SN-WAn" firstAttribute="top" secondItem="AfP-ZE-UhY" secondAttribute="bottom" constant="128" id="6Tm-ds-Jxq"/>
+                            <constraint firstItem="AfP-ZE-UhY" firstAttribute="top" secondItem="0kP-ur-MCA" secondAttribute="bottom" constant="5" id="YZ5-cS-MC2"/>
+                            <constraint firstAttribute="centerX" secondItem="0kP-ur-MCA" secondAttribute="centerX" id="Yqg-xw-dpa"/>
+                            <constraint firstItem="0kP-ur-MCA" firstAttribute="top" secondItem="KF1-BH-OPs" secondAttribute="bottom" constant="50" id="k19-2j-vQ6"/>
+                            <constraint firstItem="AfP-ZE-UhY" firstAttribute="leading" secondItem="bi0-Du-0e7" secondAttribute="leading" id="xbK-8O-3XB"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="OuncesRequestedLabel" destination="WLy-02-m7S" id="qA6-4G-Vhu"/>
+                        <outlet property="makeInfoLabel" destination="HVc-gx-6tl" id="1RW-u2-CSy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PVX-4O-hG0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1165.5" y="809.5"/>
         </scene>
         <!--drip-->
         <scene sceneID="wg7-f3-ORb">
@@ -367,6 +437,7 @@
     </scenes>
     <resources>
         <image name="chemexEmpty" width="59" height="95"/>
+        <image name="chemexFull" width="58" height="125"/>
         <image name="chemexTabIcon" width="20" height="28"/>
         <image name="dripEmpty" width="62" height="88"/>
         <image name="dripTabIcon" width="20" height="28"/>
