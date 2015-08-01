@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class ThirdViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var coffeeQuestionLabel: DesignableLabel!
@@ -40,6 +40,18 @@ class ThirdViewController: UIViewController {
         results(cBeans, waterQ, firstPour, secondPour)
         
         beans = " \(cBeans)g coffee \n \(waterQ)oz water \n (1st pour: \(firstPour)oz, 2nd pour: \(secondPour)oz)"
+        
+        self.coffeeQuestionLabel.resignFirstResponder()
+        
+    }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return false
     }
     
     override func viewDidLoad() {
