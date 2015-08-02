@@ -10,15 +10,15 @@ import UIKit
 
 class ChemexResultsViewController: UIViewController {
     
+
     @IBOutlet weak var OuncesRequestedLabel: UILabel!
     @IBOutlet weak var makeInfoLabel: UILabel!
     var makeInfoPassed:String!
     var ouncesPassed:String!
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Chemex: \(ouncesPassed)"
         
         OuncesRequestedLabel.text = ouncesPassed
         makeInfoLabel.text = makeInfoPassed

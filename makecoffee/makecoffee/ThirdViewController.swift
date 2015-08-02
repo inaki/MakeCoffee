@@ -54,6 +54,16 @@ class ThirdViewController: UIViewController, UITextFieldDelegate {
         return false
     }
     
+    override func viewDidAppear(animated: Bool) {
+        var nav = navigationController?.navigationBar
+        
+        nav?.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        nav?.shadowImage = UIImage()
+        nav?.barTintColor = UIColor.whiteColor()
+        //nav?.tintColor = UIColor(red:0.23, green:0.88, blue:0.71, alpha:1)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -69,7 +79,6 @@ class ThirdViewController: UIViewController, UITextFieldDelegate {
             var svc = segue.destinationViewController as! ChemexResultsViewController;
             svc.ouncesPassed = ouncesReqTextField.text + " oz";
             svc.makeInfoPassed = beans;
-            
             
         }
     }

@@ -102,7 +102,7 @@
             </objects>
             <point key="canvasLocation" x="601.5" y="-548.5"/>
         </scene>
-        <!--chemex-->
+        <!--Third View Controller-->
         <scene sceneID="ST7-Ml-RaA">
             <objects>
                 <viewController id="h7M-ef-tX9" customClass="ThirdViewController" customModule="makecoffee" customModuleProvider="target" sceneMemberID="viewController">
@@ -151,10 +151,8 @@
                                 <color key="backgroundColor" red="0.31372549020000001" green="0.89019607840000003" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="215" id="1gh-tx-hC1"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="215" id="DkT-sj-ZEo"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="215" id="E5a-jj-HCv"/>
                                     <constraint firstAttribute="height" constant="215" id="NvG-Ip-jtt"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="215" id="XR9-oh-fC3"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="215" id="l7B-eV-Ca9"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -209,17 +207,17 @@
                             <constraint firstItem="vmM-ah-zuQ" firstAttribute="top" secondItem="0TD-oy-AZd" secondAttribute="bottom" constant="8" id="Cof-IT-y83"/>
                             <constraint firstAttribute="centerX" secondItem="6Zs-j8-9Zg" secondAttribute="centerX" id="ExY-y5-aRu"/>
                             <constraint firstItem="0TD-oy-AZd" firstAttribute="top" secondItem="rjl-EA-Jqf" secondAttribute="bottom" constant="1" id="K0V-rc-o0p"/>
-                            <constraint firstItem="rjl-EA-Jqf" firstAttribute="top" secondItem="jiG-Fa-iZe" secondAttribute="bottom" constant="255" id="TuH-UI-Suc"/>
+                            <constraint firstItem="rjl-EA-Jqf" firstAttribute="top" secondItem="jiG-Fa-iZe" secondAttribute="bottom" constant="211" id="TuH-UI-Suc"/>
                             <constraint firstAttribute="centerX" secondItem="rjl-EA-Jqf" secondAttribute="centerX" id="UfQ-DB-dBY"/>
                             <constraint firstItem="0TD-oy-AZd" firstAttribute="top" secondItem="rjl-EA-Jqf" secondAttribute="bottom" constant="1" id="Zwh-yR-New"/>
                             <constraint firstAttribute="centerX" secondItem="vmM-ah-zuQ" secondAttribute="centerX" id="gPK-gk-6EA"/>
                             <constraint firstItem="vmM-ah-zuQ" firstAttribute="top" secondItem="0TD-oy-AZd" secondAttribute="bottom" constant="8" id="k0b-tH-0CM"/>
                             <constraint firstItem="0TD-oy-AZd" firstAttribute="top" secondItem="rjl-EA-Jqf" secondAttribute="bottom" constant="1" id="ogx-7f-YvF"/>
-                            <constraint firstItem="6Zs-j8-9Zg" firstAttribute="top" secondItem="jiG-Fa-iZe" secondAttribute="bottom" constant="50" id="stv-hf-PHr"/>
                             <constraint firstAttribute="centerX" secondItem="0TD-oy-AZd" secondAttribute="centerX" id="uf6-Ca-AcH"/>
+                            <constraint firstItem="6Zs-j8-9Zg" firstAttribute="top" secondItem="jiG-Fa-iZe" secondAttribute="bottom" constant="6" id="ywZ-wQ-SMb"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="chemex" image="chemexTabIcon" id="62k-t0-uAw"/>
+                    <navigationItem key="navigationItem" id="LxF-c4-l07"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -229,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m6Q-hU-58c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="581.5" y="809.5"/>
+            <point key="canvasLocation" x="1168.5" y="809.5"/>
         </scene>
         <!--Chemex Results View Controller-->
         <scene sceneID="q8N-zx-pcS">
@@ -246,6 +244,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0kP-ur-MCA" customClass="DesignableView" customModule="makecoffee" customModuleProvider="target">
                                 <rect key="frame" x="80" y="70" width="215" height="215"/>
                                 <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="chemexFull" translatesAutoresizingMaskIntoConstraints="NO" id="UVf-6f-0Le">
+                                        <rect key="frame" x="78" y="45" width="58" height="125"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLy-02-m7S">
                                         <rect key="frame" x="55" y="169" width="106" height="31"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
@@ -255,8 +256,10 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.27450980392156865" green="0.8784313725490196" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="215" id="iqu-Kz-nU4"/>
-                                    <constraint firstAttribute="height" constant="215" id="xYJ-2K-2c7"/>
+                                    <constraint firstAttribute="height" constant="215" id="0Jc-Zs-H0x"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="215" id="Kez-dB-5f7"/>
+                                    <constraint firstAttribute="width" constant="215" id="enk-ME-E1d"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="215" id="tKv-3a-4kI"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -274,26 +277,26 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVc-gx-6tl">
-                                        <rect key="frame" x="63" y="29" width="249" height="80"/>
+                                        <rect key="frame" x="-5" y="29" width="380" height="80"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="16"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="erm-9h-hh6"/>
+                                    <constraint firstAttribute="width" constant="375" id="g2L-n6-l79"/>
+                                </constraints>
                             </view>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="chemexFull" translatesAutoresizingMaskIntoConstraints="NO" id="UVf-6f-0Le">
-                                <rect key="frame" x="158" y="105" width="58" height="125"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="AfP-ZE-UhY" firstAttribute="centerX" secondItem="0kP-ur-MCA" secondAttribute="centerX" id="6He-af-iZt"/>
-                            <constraint firstItem="gdn-SN-WAn" firstAttribute="top" secondItem="AfP-ZE-UhY" secondAttribute="bottom" constant="128" id="6Tm-ds-Jxq"/>
-                            <constraint firstItem="AfP-ZE-UhY" firstAttribute="top" secondItem="0kP-ur-MCA" secondAttribute="bottom" constant="5" id="YZ5-cS-MC2"/>
-                            <constraint firstAttribute="centerX" secondItem="0kP-ur-MCA" secondAttribute="centerX" id="Yqg-xw-dpa"/>
-                            <constraint firstItem="0kP-ur-MCA" firstAttribute="top" secondItem="KF1-BH-OPs" secondAttribute="bottom" constant="50" id="k19-2j-vQ6"/>
-                            <constraint firstItem="AfP-ZE-UhY" firstAttribute="leading" secondItem="bi0-Du-0e7" secondAttribute="leading" id="xbK-8O-3XB"/>
+                            <constraint firstAttribute="centerX" secondItem="0kP-ur-MCA" secondAttribute="centerX" id="0oV-s3-i5I"/>
+                            <constraint firstItem="0kP-ur-MCA" firstAttribute="top" secondItem="KF1-BH-OPs" secondAttribute="bottom" constant="6" id="88p-iS-pLl"/>
+                            <constraint firstItem="0kP-ur-MCA" firstAttribute="top" secondItem="KF1-BH-OPs" secondAttribute="bottom" constant="6" id="WP3-GA-6r4"/>
+                            <constraint firstItem="AfP-ZE-UhY" firstAttribute="top" secondItem="0kP-ur-MCA" secondAttribute="bottom" constant="5" id="iwl-RY-JkL"/>
+                            <constraint firstAttribute="centerX" secondItem="AfP-ZE-UhY" secondAttribute="centerX" id="nsp-VH-JdA"/>
                         </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -305,7 +308,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PVX-4O-hG0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1165.5" y="809.5"/>
+            <point key="canvasLocation" x="1752.5" y="809.5"/>
         </scene>
         <!--drip-->
         <scene sceneID="wg7-f3-ORb">
@@ -429,13 +432,32 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="h7M-ef-tX9" kind="relationship" relationship="viewControllers" id="CNe-Yd-vDS"/>
+                        <segue destination="8Uh-VM-dA0" kind="relationship" relationship="viewControllers" id="CNe-Yd-vDS"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-106.5" y="-72.5"/>
+        </scene>
+        <!--chemex-->
+        <scene sceneID="vsR-pz-bqQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Uh-VM-dA0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="chemex" image="chemexTabIcon" id="62k-t0-uAw"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FUr-kf-FAm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="h7M-ef-tX9" kind="relationship" relationship="rootViewController" id="dWG-QO-Ls8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fwI-NF-bRb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="581.5" y="809.5"/>
         </scene>
     </scenes>
     <resources>
